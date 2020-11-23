@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>MusIc</title>
+</head>
+<body>
+    <section class="cuadro container">
+                <nav class="navbar navbar-expand-lg fixed-top mt-3">
+                    
+                    <div class="container">
+                        <div class="circle_logo">
+                            <div class="circ_logo"></div>
+                        </div>
+                        <h1  class="navbar-brand ml-5">MusIc</h1>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="colapsar">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="colapsar">
+                            <ul class="navbar-nav ml-auto mr-5">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Music Store</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Contact us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link especial py-2 px-3" id="login">Log in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link especial py-2 px-3" id="start">Get Started</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+        
+            <div class="row ">
+                <div class="circulos">
+                    <div class="a"></div>
+                    <div class="b"></div>
+                </div>
+                <div class="cuadros">
+                    <div class="uno recuadros">
+                        <h5><span class="negrita">40</span><br>Albumbs <br> 2019</h5>
+                    </div>
+                    <div class="dos recuadros"><h5>Summer <br><span class="negrita">Festival</span><br> 2020</h5></div>
+                </div>
+                <div class="col-md-6 info" >
+                    <ul class="izquierda">
+                        <li>
+                            <div class="informacion ">
+                                <h1 class="titulo">
+                                    <span class="negrita">The Voice &</span> <br>
+                                    The Band
+                                </h1>
+                                <p class="parrafo">Choose yout best music choice with huge library <br>
+                                Of our top chart songs and Favourite Singers</p>
+                            </div>
+                        </li>
+                        <li class="contenedor">
+                            <div class="reproductor">
+                                <p id="titulo">Demo</p>
+                                <div class="bar">
+                                    <div id="barra"></div>
+                                    <div id="handler"></div>
+                                </div>
+                                <div class="duracion">
+        
+                                    <audio class="player_audio" controls id="audio">
+                                        <source src="" type="audio/mpeg">
+                                    </audio>
+        
+                                    <div class="player_controls">
+                                        <div class="player_btn">
+                                            <i class="fas fa-backward" id="prev"></i>
+                                        </div>
+        
+                                        <div class="player_btn" id="play">
+                                            <i class="fas fa-play play-btn"></i>
+                                            <i class="fas fa-pause pause-btn d-none"></i>
+                                        </div>
+        
+                                        <div class="player_btn">
+                                            <i class="fas fa-forward" id="next"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+
+                <div class="col-md-6 imagen">
+                    <img src="./undraw_audio_player_yty9.svg" alt="Fondo" height="500px" width="500px">
+                </div>
+            </div>
+    </section>
+
+    <script src="./script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

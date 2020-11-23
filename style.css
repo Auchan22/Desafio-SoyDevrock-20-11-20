@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Fira+Sans:wght@600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #394460;
+  font-family: "Comfortaa", cursive !important;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.cuadro {
+  background-color: #f4f7ff;
+  display: flex;
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 15px;
+  min-height: 750px;
+  width: 1500px;
+}
+
+/*Navbar inicio*/
+
+.circle_logo {
+  position: relative;
+}
+
+.circ_logo {
+  background-color: #394460;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  top: -38px;
+  left: 113px;
+}
+
+.navbar {
+  height: 180px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: #0b0f1d;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #0b0f1d;
+  cursor: default;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #0b0f1d;
+  font-size: 12px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: #394460;
+}
+
+.especial {
+  /* border: 1px solid black; */
+  border-radius: 30px;
+  color: #ffff;
+}
+
+#login {
+  background-color: #394460;
+}
+
+#start {
+  background-color: #ffae2b;
+}
+
+#start:hover {
+  -webkit-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.3s all ease-in;
+  color: #0000;
+}
+
+#login:hover {
+  -webkit-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.3s all ease-in;
+  transform: translateY(3px);
+  color: #fff;
+}
+
+/*Navbar fin*/
+
+/*Cuerpo inicio*/
+
+.izquierda li {
+  list-style: none;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.informacion {
+  color: #394460;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.titulo {
+  font-size: 52px;
+}
+
+.negrita {
+  font-weight: 1000;
+}
+
+/*Elementos de fondo inicio*/
+.circulos {
+  position: relative;
+}
+
+.a {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  height: 120px;
+  width: 120px;
+  background: rgba(237, 237, 237, 1);
+  box-shadow: inset -25px -25px 40px rgba(0, 0, 0, 0.5);
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    rgba(255, 255, 220, 0.2) 0%,
+    transparent 100%
+  );
+  background-image: -moz-linear-gradient(
+    -45deg,
+    rgba(255, 255, 220, 0.2) 0%,
+    transparent 100%
+  );
+  background-image: -o-linear-gradient(
+    -45deg,
+    rgba(255, 255, 220, 0.2) 0%,
+    transparent 100%
+  );
+  background-image: -ms-linear-gradient(
+    -45deg,
+    rgba(255, 255, 220, 0.2) 0%,
+    transparent 100%
+  );
+
+  position: absolute;
+  z-index: -1000px;
+  top: 0px;
+  left: 330px;
+}
+
+.b {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  height: 50px;
+  width: 50px;
+
+  background: rgba(95, 71, 173, 1);
+  box-shadow: inset -25px -25px 40px rgba(0, 0, 0, 0.5);
+  background-image: -webkit-linear-gradient(
+    -45deg,
+    rgba(255, 255, 220, 0.2) 0%,
+    transparent 100%
+  );
+  background-image: -moz-linear-gradient(
+    -45deg,
+    rgba(255, 255, 220, 0.2) 0%,
+    transparent 100%
+  );
+  background-image: -o-linear-gradient(
+    -45deg,
+    rgba(255, 255, 220, 0.2) 0%,
+    transparent 100%
+  );
+  background-image: -ms-linear-gradient(
+    -45deg,
+    rgba(255, 255, 220, 0.2) 0%,
+    transparent 100%
+  );
+
+  position: absolute;
+  z-index: 1000px;
+  top: 20px;
+  left: 420px;
+}
+
+.cuadros {
+  position: relative;
+}
+
+.recuadros {
+  background-color: #ffffff;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.uno {
+  padding: 10px 40px 10px 5px;
+  position: absolute;
+  top: 140px;
+  left: 400px;
+  -webkit-box-shadow: -8px 10px 52px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -8px 10px 52px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: -8px 10px 52px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dos {
+  padding: 10px 5px 10px 40px;
+  position: absolute;
+  top: 50px;
+  left: 750px;
+  -webkit-box-shadow: 29px 10px 52px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 29px 10px 52px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 29px 10px 52px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*Elementos de fondo Fin*/
+
+/*Empezando seccion de reproductor*/
+
+.reproductor {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  -webkit-box-shadow: 40px 19px 36px -3px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 40px 19px 36px -3px rgba(0, 0, 0, 0);
+  box-shadow: 40px 19px 36px -3px rgba(0, 0, 0, 0);
+}
+
+.player_controls {
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.player_btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  color: #394460;
+}
+
+.player_btn:hover {
+  color: grey;
+}
+
+.player_btn:active {
+  box-shadow: inset -8px -8px 20px #fff9;
+}
+
+.bar {
+  width: 400px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 50px;
+  display: flex;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+#barra {
+  height: 5px;
+  background-color: #d7dbdd;
+  border-radius: 20px;
+}
+
+#handler {
+  width: 8px;
+  height: 8px;
+  background-color: grey;
+  border-radius: 50%;
+  margin-left: -5px;
+  transform: scale(2);
+}
+
+.player_audio {
+  visibility: hidden;
+}
+
+/*Cuerpo Fin*/
