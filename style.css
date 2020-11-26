@@ -88,7 +88,7 @@ h3 {
 
 .nav-link:hover {
   text-decoration: none;
-  color: #394460;
+  color: #4e45b8;
 }
 
 .especial {
@@ -98,7 +98,7 @@ h3 {
 }
 
 .especial:hover {
-  color: black;
+  color: #000000;
 }
 
 #login {
@@ -137,19 +137,23 @@ h3 {
   position: relative;
   height: 500px;
   width: 500px;
+  margin-top: 100px;
+  padding-left: 220px;
 }
 
 .grande {
   position: absolute;
-  top: 100px;
-  left: 300px;
+  top: 10px;
+  left: 250px;
 }
 
 .notas {
   position: absolute;
-  top: 100px;
-  left: 250px;
+  top: 10px;
+  left: 220px;
   z-index: 1000;
+  height: 500px !important;
+  width: 500px !important;
 }
 
 /*Elementos de fondo inicio*/
@@ -199,7 +203,7 @@ h3 {
     76deg,
     #6845b8 10%,
     #653fac 25%,
-    #9054d4ee 85%,
+    #9054d4ee 45%,
     #edd6ff 100%
   );
   position: absolute;
@@ -214,7 +218,7 @@ h3 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(85deg, #4e45b8 40%, #653fac 50%, #f3ebfa 60%);
+  background: linear-gradient(55deg, #4e45b8 40%, #653fac 50%, #f3ebfa 60%);
   filter: blur(8px);
   transform: rotateZ(680deg);
 }
@@ -246,7 +250,7 @@ h3 {
   padding: 10px 5px 10px 40px;
   position: absolute;
   top: 130px;
-  right: -1200px;
+  right: -1180px;
   -webkit-box-shadow: 29px 10px 52px 15px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 29px 10px 52px 15px rgba(0, 0, 0, 0.1);
   box-shadow: 29px 10px 52px 15px rgba(0, 0, 0, 0.1);
@@ -342,99 +346,110 @@ h3 {
 
 /*Fin animacion*/
 
-@media (width: 320px) {
+@media (max-width: 414px) {
   /* .container {
     margin-left: 0px !important;
     margin-right: 0px !important;
   } */
 
+  .row {
+    margin: 10px auto;
+  }
+
   .cuadro {
-    min-width: 500px;
+    max-width: 350px;
     margin: 20px auto;
-    height: 1900px;
-  }
-
-  .navbar {
-    margin-bottom: 20px;
-  }
-
-  .circle_logo {
-    position: relative;
-  }
-
-  .circ_logo {
-    background-color: #394460;
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    top: -38px;
-    left: 245px;
-  }
-
-  .info {
+    height: 1500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    flex-direction: column;
-    margin: 100px auto;
+  }
+
+  .navbar {
+    margin-bottom: 0px;
+    height: 120px;
+  }
+
+  .collapse {
+    background-color: grey;
+    z-index: 10000px;
     text-align: center;
   }
 
-  .informacion {
-    color: #394460;
+  .circ_logo {
+    position: absolute;
+    top: -38px;
+    left: 170px;
+  }
+
+  .info {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 2px;
+    max-width: 320px;
+    padding: 0px 5px;
+  }
+
+  .informacion h3 {
+    font-size: 40px;
   }
 
   .titulo {
-    line-height: 60px;
-    font-size: 60px;
-    font-weight: 800;
+    line-height: 50px;
+    font-size: 50px;
+  }
+
+  .img-app img {
+    margin-bottom: 5px;
   }
 
   .imagenes {
-    position: relative;
-    height: 500px;
-    width: 500px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    padding-left: 0px;
+    height: 300px;
   }
 
   .grande {
     position: absolute;
     top: 20px;
-    left: 0px;
+    left: 20px;
     z-index: -1000px;
+    width: 280px;
+    height: 280px;
+    margin: 10px auto;
   }
 
   .notas {
     position: absolute;
     top: 20px;
-    right: 0px;
+    left: 20px;
     z-index: 1000px;
-    height: 400px;
-    width: 400px;
+    max-height: 320px !important;
+    max-width: 320px !important;
   }
 
   /*Elementos de fondo inicio*/
-  .circulos {
-    position: relative;
-  }
 
   .white_circle {
     position: absolute;
     z-index: -1000px;
-    top: -150px;
-    left: 180px;
+    top: -280px;
+    left: 110px;
+    display: none;
   }
 
   .violet_circle {
     position: absolute;
     z-index: 1000px;
-    top: -130px;
-    left: 270px;
-  }
-
-  .cuadros {
-    position: relative;
+    top: -270px;
+    left: 200px;
+    display: none;
   }
 
   .recuadros {
@@ -450,8 +465,8 @@ h3 {
 
   .a {
     position: absolute;
-    top: 1200px;
-    left: 150px;
+    top: 900px;
+    left: 60px;
     -webkit-box-shadow: -8px 10px 52px 15px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: -8px 10px 52px 15px rgba(0, 0, 0, 0.1);
     box-shadow: -8px 10px 52px 15px rgba(0, 0, 0, 0.1);
@@ -459,8 +474,8 @@ h3 {
 
   .b {
     position: absolute;
-    top: 1350px;
-    left: 150px;
+    top: 1050px;
+    left: 60px;
     -webkit-box-shadow: 29px 10px 52px 15px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 29px 10px 52px 15px rgba(0, 0, 0, 0.1);
     box-shadow: 29px 10px 52px 15px rgba(0, 0, 0, 0.1);
@@ -471,75 +486,17 @@ h3 {
   /*Empezando seccion de reproductor*/
 
   .reproductor {
-    width: 400px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #f4f7ff;
-    -webkit-box-shadow: 10px 11px 76px -14px rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 10px 11px 76px -14px rgba(0, 0, 0, 0.12);
-    box-shadow: 10px 11px 76px -14px rgba(0, 0, 0, 0.12);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-
-  .player_controls {
-    display: flex;
-    width: 95%;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 25px;
-  }
-
-  .player_btn {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    color: #394460;
-  }
-
-  .player_btn:hover {
-    color: grey;
-  }
-
-  .player_btn:active {
-    box-shadow: inset -8px -8px 20px #fff9;
+    width: 280px;
+    height: 180px;
   }
 
   .bar {
-    width: 350px;
-    height: 5px;
-    background-color: grey;
-    border-radius: 50px;
-    display: flex;
-    margin-left: 25px;
-    cursor: pointer;
-  }
-
-  #barra {
-    height: 5px;
-    background-color: #d7dbdd;
-    border-radius: 20px;
-  }
-
-  #handler {
-    width: 8px;
-    height: 8px;
-    background-color: grey;
-    border-radius: 50%;
-    margin-left: -5px;
-    transform: scale(2);
-  }
-
-  .player_audio {
-    visibility: hidden;
+    width: 260px;
+    margin-left: 0px;
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 415px) and (max-width: 535px) {
   .info {
     display: flex;
     justify-content: center;
