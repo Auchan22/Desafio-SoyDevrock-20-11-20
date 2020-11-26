@@ -7,7 +7,7 @@ const titulo = document.getElementById("titulo");
 
 const notas = document.getElementById("notas");
 
-let songs = ["./spinetta-bajan.mp3", 1, 2];
+let songs = ["./music/Bajan.mp3", "./music/Jingle-Bells.mp3", "./music/I-FINK-U-FREEKY.mp3"];
 
 let currentSong = 0;
 window.onload = playSong();
@@ -27,13 +27,13 @@ playPause.addEventListener("click", ()=>{
         playPause.querySelector(".play-btn").classList.toggle("d-none");
         audio.play();
 
-        notas.className = "note-mov";
+        // notas.className = "note-mov";
     }else{
         audio.pause();
         playPause.querySelector(".pause-btn").classList.toggle("d-none");
         playPause.querySelector(".play-btn").classList.toggle("d-none");
 
-        notas.className = "";
+        // notas.className = "";
     }
 })
 
@@ -47,6 +47,7 @@ next.addEventListener("click", ()=>{
     if(currentSong>2){
         currentSong=0;
     }
+    currentSong++;
 
     playPause.querySelector(".pause-btn").classList.toggle("d-none");
     playPause.querySelector(".play-btn").classList.toggle("d-none");
@@ -54,7 +55,7 @@ next.addEventListener("click", ()=>{
     playSong();
 })
 
-next.addEventListener("click", ()=>{
+prev.addEventListener("click", ()=>{
     currentSong--;
     if(currentSong<0){
         currentSong=2;
